@@ -155,4 +155,7 @@ Import the table ‘Segment Scores Table’ into Power BI.
 **Model the tables:** Create a relationship between the RFM table — RFM score column and the Segment scores table — scores column.
 
 ## **Analysis & Visualization**
-Here’s a the report created for this task.
+Here’s my full Power BI dashboard: 
+- [Online Retail Analysis.pbix](https://github.com/phuongtrinhsmile2307/Projects/blob/main/Online%20Retail.pbix)
+- [Online Retail Analysis.pdf](https://github.com/phuongtrinhsmile2307/Projects/blob/main/Online%20Retail.pdf)
+
