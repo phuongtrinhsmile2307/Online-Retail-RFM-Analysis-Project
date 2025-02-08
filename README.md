@@ -41,7 +41,7 @@ To define RFM score on a scale of 1–5 for each customer in terms of recency, f
 
 >Here is my process for analysis
 ## Datasources
-Online Retail Data: The primary dataset used for this analysis is the "Online Retail Data Set.xlsx" file, containing detailed information about online retail sales made by the company.
+Online Retail Data: The primary dataset used for this analysis is the [Online Retail Data Set.xlsx](https://github.com/phuongtrinhsmile2307/Projects/blob/main/Online%20Retail%20Data%20Set.xlsx)  file , containing detailed information about online retail sales made by the company.
 ## Tools:
 - Power Query - Data Cleaning
 - Power BI - Data Modeling - Analysis - Visualization
@@ -53,14 +53,10 @@ The two datasets provided were Excel files. They were assessed for data quality 
 - Some rows in the dataset had empty values in the **CustomerID** column
 
 **Data transformation and cleaning steps in Power Query Editor:**
-- Replaced null values in the **CustomerID** column with “unknown”
-- Changed data types:
-    - **CustomerID, InvoiceNo, and StockCode** to *Text*
-    - **Quantity** to *Whole Number*
-    - **UnitPrice** to *Decimal Number*
-    - **InvoiceDatetime** to *Datetime*
-- Filtered **UnitPrice** to include only values greater than 0
-- Filtered **Quantity** to include only values greater than or equal to 1
+- Replaced null values in the **CustomerID** column with “unknown”.
+- Formatting columns to the appropriate data types.
+- Filtered **UnitPrice** to include only values greater than 0.
+- Filtered **Quantity** to include only values greater than or equal to 1.
 
 ## DAX For RFM Analysis
 
@@ -87,14 +83,14 @@ As the dataset was record transaction in 2011 so I used the last transaction dat
 Fvalue = DISTINCTCOUNT('Online Retail'[InvoiceNo])
 ```
 
-**M-value:** Average amount of purchases made during period.
+**M-value:** Average spending on a purchase made during period.
 
 ```
 Mvalue = 
 var TotalSales = SUM('Online Retail'[Revenue])
-var TotalQuantity = SUM('Online Retail'[Quantity])
+var TotalPurchases = DISTINCTCOUNT('Online Retail'[InvoiceNo])
 Return 
-DIVIDE (TotalSales,TotalQuantity,0)
+DIVIDE (TotalSales,TotalPurchases,0)
 ```
 
 ### **Generate the new table called ‘RFM table’**
@@ -122,7 +118,8 @@ R Score =
         [Rvalue] <= PERCENTILE.INC ( 'RFM table'[R Value], 0.80 ), "2",
         "1"
     ) 
-    
+```
+```    
 F Score = 
 SWITCH (
   TRUE (),
@@ -132,14 +129,15 @@ SWITCH (
    [Fvalue] <= PERCENTILE.INC ( 'RFM table'[F Value], 0.80 ), "4",
    "5"
        )
-       
+```
+```       
 M Score = 
 SWITCH (
   TRUE (),
-   [Mvalue] <= PERCENTILE.INC ( 'RFM table'[F Value], 0.20 ), "1",    
-   [Mvalue] <= PERCENTILE.INC ( 'RFM table'[F Value], 0.40 ), "2", 
-   [MValue] <= PERCENTILE.INC ( 'RFM table'[F Value], 0.60 ), "3", 
-   [Mvalue] <= PERCENTILE.INC ( 'RFM table'[F Value], 0.80 ), "4",
+   [Mvalue] <= PERCENTILE.INC ( 'RFM table'[M Value], 0.20 ), "1",    
+   [Mvalue] <= PERCENTILE.INC ( 'RFM table'[M Value], 0.40 ), "2", 
+   [MValue] <= PERCENTILE.INC ( 'RFM table'[M Value], 0.60 ), "3", 
+   [Mvalue] <= PERCENTILE.INC ( 'RFM table'[M Value], 0.80 ), "4",
    "5"
        )
 ```
@@ -157,3 +155,4 @@ Import the table ‘Segment Scores Table’ into Power BI.
 **Model the tables:** Create a relationship between the RFM table — RFM score column and the Segment scores table — scores column.
 
 ## **Analysis & Visualization**
+Here’s a the report created for this task.
