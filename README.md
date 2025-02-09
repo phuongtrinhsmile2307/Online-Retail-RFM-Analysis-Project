@@ -155,11 +155,57 @@ Import the table ‘Segment Scores Table’ into Power BI.
 **Model the tables:** Create a relationship between the RFM table — RFM score column and the Segment scores table — scores column.
 
 ## **Analysis & Visualization**
+### **Customer Segmentation By RFM Analysis**
+
+![image](https://github.com/user-attachments/assets/bd6341c8-5214-466b-9505-d3ba6c7d5e1a)
+![image](https://github.com/user-attachments/assets/bd1bf565-1328-410a-a783-044c01c330cb)
+
+### **Country Performance**
+- The Netherlands, Ireland, Germany and France have high volumes of units bought and revenue generated.
+- The Pareto curve indicates that a few top countries contribute to the majority of sales revenue.
+→ *Prioritize resources and marketing efforts on high-revenue regions for maximum impact.*
+
+- Mid-Tier Markets such as Spain, Switzerland, and Belgium could be considered to implement expansion strategy.
+  
+- Sales revenue in bottom 5 regions is minimal, with Saudi Arabia showing a very few contributions → *Consider investigating reasons (market demand, distribution challenges, or competitive factors).*
+
+![image](https://github.com/user-attachments/assets/097f838d-1c90-49a2-9215-5318070f42da)
+
+### **Country Demand**
+- Most of the sales are only in the European region →  *The company should invest more in these areas to increase demand for products.*
+- There are very few demands in the American, Africa and Asia regions → *A new strategy targeting these areas has the potential to boost sales revenues and profitability.*
+
+![image](https://github.com/user-attachments/assets/f8b0d47e-262b-4127-a6e9-1ac39c5740c2)
+
+### **Sales Trend**
+The sales trend of the top 3 countries by revenue contribution:
+- EIRE had strong sales in Q3 but dropped in Q4 (possibly due to missing December data).
+- Germany showed a stable but slightly declining trend, recovering towards year-end.
+- Netherlands exhibited continuous growth, suggesting a positive long-term trend.
+  
+![image](https://github.com/user-attachments/assets/58451568-483b-4fc1-965f-1196b59ccd09)
+
+
+Monthly View:
+- April was a weak month across all three metrics (Sales, Quantity, and Invoices) → *Investigate causes and introduce early promotions to counteract this.*
+- July-October showed strong performance, indicating peak sales months. → *Optimize inventory, use upselling strategies, and implement loyalty programs to sustain growth.*
+- A downward trend begins in November, but this could be influenced by missing December data. 
+  
+![image](https://github.com/user-attachments/assets/288b7943-7dfb-40c6-8c94-a4d217e47c2d)
+
+### **Product Performance**
+- The top 10 products contributed only 15.3% of the total revenue, showing the company does not appear to be overly dependent on a few best-sellers.
+- The bottom 10 products collectively made less than $12, indicating they contribute negligibly to overall sales.
+- The scatter plot showed a broad spread of products contributing to revenue, rather than just a few dominant items. 
+- POST and M are key revenue drivers but rely on high unit prices rather than high sales volume.
+
+![image](https://github.com/user-attachments/assets/c5049657-c958-40a4-aabf-52d94d6a4d43)
+
 Here’s my full Power BI dashboard: 
 - [Online Retail Analysis.pbix](https://github.com/phuongtrinhsmile2307/Projects/blob/main/Online%20Retail.pbix)
 - [Online Retail Analysis.pdf](https://github.com/phuongtrinhsmile2307/Projects/blob/main/Online%20Retail.pdf)
 
-## **RFM Results**
+## **RFM Results And Recommendation**
 This table presents the **RFM segmentation** of 4,339 customers based on **Recency (R), Frequency (F), and Monetary (M) values**, categorizing them into different engagement levels.
 
 ![image](https://github.com/user-attachments/assets/c676faf4-9279-4efd-ae96-29fe8534109f)
@@ -180,7 +226,7 @@ This table presents the **RFM segmentation** of 4,339 customers based on **Recen
     - **New Customers (5.8%)**: Just started purchasing (49 days since first purchase, 1 purchase, average spending of $142). Need nurturing.
     - **Promising (10.5%)**: They have low purchase frequency (1 purchase) but high average spending ($676), meaning they show good potential for conversion into loyal customers.
 
-## **Recommendations:**
+### **Recommendations:**
 
 - **Retain and Reward Champions & Loyal Customers** with personalized offers, loyalty programs, and VIP perks.
 - **Convert Potential Loyalists & Promising Customers** by increasing engagement and upselling.
