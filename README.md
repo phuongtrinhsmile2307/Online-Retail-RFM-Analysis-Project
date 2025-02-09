@@ -159,3 +159,31 @@ Here’s my full Power BI dashboard:
 - [Online Retail Analysis.pbix](https://github.com/phuongtrinhsmile2307/Projects/blob/main/Online%20Retail.pbix)
 - [Online Retail Analysis.pdf](https://github.com/phuongtrinhsmile2307/Projects/blob/main/Online%20Retail.pdf)
 
+## **RFM Results**
+This table presents the **RFM segmentation** of 4,339 customers based on **Recency (R), Frequency (F), and Monetary (M) values**, categorizing them into different engagement levels.
+
+![image](https://github.com/user-attachments/assets/c676faf4-9279-4efd-ae96-29fe8534109f)
+
+### **Key Findings:**
+
+1. **Top-performing customers:**
+    - **Champions (10%)**: Highly engaged with the highest number of purchases (16) and large average spending per purchase ($678). These are the best customers and should be nurtured.
+    - **Loyal Customers (6.6%)**: Regular and valuable buyers with **a**verage spending of $555 and a good number of purchases (5). Keeping them engaged is crucial.
+    - **Potential Loyalists (17.5%)**: The largest segment, with a moderate purchase frequency (8 purchases) but lower average spending ($219). They have the potential to become champions.
+2. **At-risk customers:**
+    - **Hibernating (9.4%) & About to Sleep (6.4%)**: These customers haven't purchased recently, with many days since their last purchase (153, 111 days) and low purchase frequency (2 purchases). Targeted re-engagement campaigns are needed.
+    - **At Risk (8.5%)**: Despite high average spending ($597), they haven't purchased in a long time (160 days since last purchase). Immediate action is required.
+    - **Cannot Lose Them (10.4%)**: These customers used to be high-value buyers (average spending of $755) but are now inactive (246 days since last purchase). Urgent retention strategies are necessary.
+3. **Lost Customers (9.3%)**
+    - They have the highest inactivity period (294 days since last purchase) and lowest purchase frequency (1 purchase), indicating they haven't engaged for a long time. Win-back strategies could be applied selectively.
+4. **New & Promising Customers:**
+    - **New Customers (5.8%)**: Just started purchasing (49 days since first purchase, 1 purchase, average spending of $142). Need nurturing.
+    - **Promising (10.5%)**: They have low purchase frequency (1 purchase) but high average spending ($676), meaning they show good potential for conversion into loyal customers.
+
+## **Recommendations:**
+
+- **Retain and Reward Champions & Loyal Customers** with personalized offers, loyalty programs, and VIP perks.
+- **Convert Potential Loyalists & Promising Customers** by increasing engagement and upselling.
+- **Re-engage At-Risk and Hibernating Customers** with targeted discounts, win-back campaigns, or reminders.
+- **Prevent Customer Churn (Cannot Lose Them & At Risk)** by offering exclusive deals and proactive outreach.
+- **Analyze Lost Customers** to identify patterns and optimize acquisition strategies.
