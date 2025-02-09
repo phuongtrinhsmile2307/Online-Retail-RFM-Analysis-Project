@@ -188,6 +188,3 @@ This table presents the **RFM segmentation** of 4,339 customers based on **Recen
 - **Prevent Customer Churn (Cannot Lose Them & At Risk)** by offering exclusive deals and proactive outreach.
 - **Analyze Lost Customers** to identify patterns and optimize acquisition strategies.
   
-## **My Certificate from Tata Group Virtual Experience**
-
-![image](https://github.com/user-attachments/assets/dc4f0c63-889a-4ebd-9d95-c064015b1479)
