@@ -1,6 +1,6 @@
 # Customer Segmentation With RFM Analysis Using Power BI | Tata Group Virtual Case Experience 
 ## Project Overview 
-**Case:** The CEO and CMO have recently met to finalise the requirements and I would like you to provide them with some analysis and visuals that would help answer their questions. Both, the executives are interested in viewing and understanding how they can use the data to make more meaningful decisions. I would need to provide insights which they can use to create the expansion strategy. The executives want to analyse the trends and the breakdown by different categories so that they have clarity on how the revenue is being generated and what are the main factors affecting the online store. 
+**Case:** The CEO and CMO have recently met to finalise the requirements and I need to provide them with some analysis and visuals that would help answer their questions. Both, the executives are interested in viewing and understanding how they can use the data to make more meaningful decisions. The executives want to analyse the trends and the breakdown by different categories so that they have clarity on how the revenue is being generated and what are the main factors affecting the online store. 
 
 >I have created some visuals in terms of Country, Products, and Customer Performance. Specifically, I have applied the RFM model for customer segmentation. In this description, I will focus on the process of conducting RFM analysis and its results.
 ## About RFM Analysis
