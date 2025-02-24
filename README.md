@@ -158,6 +158,7 @@ Import the table ‘Segment Scores Table’ into Power BI.
 ### **Customer Segmentation By RFM Analysis**
 
 ![image](https://github.com/user-attachments/assets/bd6341c8-5214-466b-9505-d3ba6c7d5e1a)
+
 ![image](https://github.com/user-attachments/assets/bd1bf565-1328-410a-a783-044c01c330cb)
 
 ### **Country Performance**
