@@ -202,8 +202,8 @@ Monthly View:
 ![image](https://github.com/user-attachments/assets/c5049657-c958-40a4-aabf-52d94d6a4d43)
 
 Here’s my full Power BI dashboard: 
-- [Online Retail Analysis.pbix](https://github.com/phuongtrinhsmile2307/Projects/blob/main/Online%20Retail.pbix)
-- [Online Retail Analysis.pdf](https://github.com/phuongtrinhsmile2307/Projects/blob/main/Online%20Retail.pdf)
+- [Online Retail Analysis.pbix](https://github.com/phuongtrinhsmile2307/Online-Retail-RFM-Analysis-Project/blob/main/Online%20Retail%20Analysis.pbix)
+- [Online Retail Analysis.pdf](https://github.com/phuongtrinhsmile2307/Online-Retail-RFM-Analysis-Project/blob/main/Online%20Retail%20Analysis.pdf)
 
 ## **RFM Results And Recommendation**
 This table presents the **RFM segmentation** of 4,339 customers based on **Recency (R), Frequency (F), and Monetary (M) values**, categorizing them into different engagement levels.
